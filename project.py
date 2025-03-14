@@ -48,7 +48,7 @@ if __name__ == '__main__':
                     n_cells=128,
                     epochs=600,
                     momentum=0.0,
-                    lr_scale=0.15,
+                    lr_scale=0.1,
                     learning_rate_decay_start_time=0.1,
                     late_exaggeration_time=0.7,
                     late_exaggeration_scale=1.5,
