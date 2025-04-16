@@ -1,0 +1,59 @@
+<svg viewBox="0 0 750 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Styles -->
+  <style>
+    .bg { fill: white; }
+    .schema-box { fill: white; stroke: #2E7D32; stroke-width: 2; rx: 15; ry: 15; }
+    .header { fill: #2E7D32; font-family: monospace; font-size: 18px; font-weight: bold; }
+    .text { fill: black; font-family: monospace; font-size: 18px; }
+    .type-text { fill: #2E7D32; font-family: monospace; font-size: 18px; }
+    .title { fill: black; font-family: monospace; font-size: 22px; font-weight: bold; }
+    .divider { stroke: #2E7D32; stroke-width: 1; }
+  </style>
+  
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="750" height="320" />
+  
+  <!-- Title -->
+  <text class="title" x="375" y="35" text-anchor="middle">wikimap.parquet (61,614,907 rows)</text>
+  
+  <!-- Schema Box -->
+  <rect class="schema-box" x="30" y="50" width="690" height="250" />
+  
+  <!-- Column Headers -->
+  <text class="header" x="80" y="85">Column</text>
+  <text class="header" x="200" y="85">Type</text>
+  <text class="header" x="350" y="85">Description</text>
+  
+  <!-- Divider under headers -->
+  <line class="divider" x1="60" y1="95" x2="690" y2="95" />
+  
+  <!-- Column: x -->
+  <text class="text" x="80" y="125">x</text>
+  <text class="type-text" x="200" y="125">float</text>
+  <text class="text" x="350" y="125">X-coordinate for visualization</text>
+  
+  <!-- Column: y -->
+  <text class="text" x="80" y="155">y</text>
+  <text class="type-text" x="200" y="155">float</text>
+  <text class="text" x="350" y="155">Y-coordinate for visualization</text>
+  
+  <!-- Column: title -->
+  <text class="text" x="80" y="185">title</text>
+  <text class="type-text" x="200" y="185">string</text>
+  <text class="text" x="350" y="185">Wikipedia article title</text>
+  
+  <!-- Column: subset -->
+  <text class="text" x="80" y="215">subset</text>
+  <text class="type-text" x="200" y="215">string</text>
+  <text class="text" x="350" y="215">Language subset identifier</text>
+  
+  <!-- Column: url -->
+  <text class="text" x="80" y="245">url</text>
+  <text class="type-text" x="200" y="245">string</text>
+  <text class="text" x="350" y="245">Wikipedia article URL</text>
+  
+  <!-- Column: wid -->
+  <text class="text" x="80" y="275">wid</text>
+  <text class="type-text" x="200" y="275">integer</text>
+  <text class="text" x="350" y="275">Wikipedia article ID</text>
+</svg>

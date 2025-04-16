@@ -1,0 +1,124 @@
+<svg viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg">
+  <!-- Styles -->
+  <style>
+    .folder { fill: #4CAF50; }
+    .file { fill: #8BC34A; }
+    .text { font-family: monospace; font-size: 14px; }
+    .folder-text { font-weight: bold; }
+    .line { stroke: #2E7D32; stroke-width: 1.5; }
+    .ellipsis { font-family: monospace; font-size: 16px; font-weight: bold; }
+  </style>
+  
+  <!-- Root directory -->
+  <g transform="translate(50, 30)">
+    <!-- Root folder -->
+    <rect class="folder" x="0" y="0" width="30" height="20" rx="3" ry="3" />
+
+    
+    <!-- Language folders -->
+    <g transform="translate(20, 40)">
+      <!-- ab language folder -->
+      <line class="line" x1="0" y1="0" x2="0" y2="15" />
+      <line class="line" x1="0" y1="15" x2="20" y2="15" />
+      <rect class="folder" x="20" y="5" width="30" height="20" rx="3" ry="3" />
+      <text class="text folder-text" x="60" y="20">20231101.ab</text>
+      
+      <!-- ab language files -->
+      <g transform="translate(40, 40)">
+        <line class="line" x1="0" y1="-15" x2="0" y2="0" />
+        <line class="line" x1="0" y1="0" x2="20" y2="0" />
+        <rect class="file" x="20" y="-10" width="30" height="20" rx="3" ry="3" />
+        <text class="text" x="60" y="5">20231101_ab_embeddings_shard_0.npy</text>
+      </g>
+      
+      <!-- ace language folder -->
+      <g transform="translate(0, 60)">
+        <line class="line" x1="0" y1="-45" x2="0" y2="15" />
+        <line class="line" x1="0" y1="15" x2="20" y2="15" />
+        <rect class="folder" x="20" y="5" width="30" height="20" rx="3" ry="3" />
+        <text class="text folder-text" x="60" y="20">20231101.ace</text>
+        
+        <!-- ace language files -->
+        <g transform="translate(40, 40)">
+          <line class="line" x1="0" y1="-15" x2="0" y2="0" />
+          <line class="line" x1="0" y1="0" x2="20" y2="0" />
+          <rect class="file" x="20" y="-10" width="30" height="20" rx="3" ry="3" />
+          <text class="text" x="60" y="5">20231101_ace_embeddings_shard_0.npy</text>
+        </g>
+      </g>
+      
+      <!-- Ellipsis for languages between ace and en -->
+      <g transform="translate(0, 140)">
+        <line class="line" x1="0" y1="-25" x2="0" y2="10" />
+        <text class="ellipsis" x="30" y="5">⋮</text>
+      </g>
+      
+      <!-- en language folder -->
+      <g transform="translate(0, 180)">
+        <line class="line" x1="0" y1="-30" x2="0" y2="15" />
+        <line class="line" x1="0" y1="15" x2="20" y2="15" />
+        <rect class="folder" x="20" y="5" width="30" height="20" rx="3" ry="3" />
+        <text class="text folder-text" x="60" y="20">20231101.en</text>
+        
+        <!-- en language files -->
+        <g transform="translate(40, 40)">
+          <line class="line" x1="0" y1="-15" x2="0" y2="120" />
+          
+          <!-- Shard 0 -->
+          <line class="line" x1="0" y1="0" x2="20" y2="0" />
+          <rect class="file" x="20" y="-10" width="30" height="20" rx="3" ry="3" />
+          <text class="text" x="60" y="5">20231101_en_embeddings_shard_0.npy</text>
+          
+          <!-- Shard 1 -->
+          <g transform="translate(0, 30)">
+            <line class="line" x1="0" y1="0" x2="20" y2="0" />
+            <rect class="file" x="20" y="-10" width="30" height="20" rx="3" ry="3" />
+            <text class="text" x="60" y="5">20231101_en_embeddings_shard_1.npy</text>
+          </g>
+          
+          <!-- Shard 2 -->
+          <g transform="translate(0, 60)">
+            <line class="line" x1="0" y1="0" x2="20" y2="0" />
+            <rect class="file" x="20" y="-10" width="30" height="20" rx="3" ry="3" />
+            <text class="text" x="60" y="5">20231101_en_embeddings_shard_2.npy</text>
+          </g>
+          
+          <!-- Ellipsis for shards 3-5 -->
+          <g transform="translate(0, 90)">
+            <line class="line" x1="0" y1="0" x2="20" y2="0" />
+            <text class="ellipsis" x="30" y="5">⋮</text>
+          </g>
+          
+          <!-- Shard 6 -->
+          <g transform="translate(0, 120)">
+            <line class="line" x1="0" y1="0" x2="20" y2="0" />
+            <rect class="file" x="20" y="-10" width="30" height="20" rx="3" ry="3" />
+            <text class="text" x="60" y="5">20231101_en_embeddings_shard_6.npy</text>
+          </g>
+        </g>
+      </g>
+      
+      <!-- Ellipsis for languages after en -->
+      <g transform="translate(0, 360)">
+        <line class="line" x1="0" y1="-40" x2="0" y2="10" />
+        <text class="ellipsis" x="30" y="5">⋮</text>
+      </g>
+      
+      <!-- wikimap.parquet file -->
+      <g transform="translate(0, 390)">
+        <line class="line" x1="0" y1="-20" x2="0" y2="15" />
+        <line class="line" x1="0" y1="15" x2="20" y2="15" />
+        <rect class="file" x="20" y="5" width="30" height="20" rx="3" ry="3" />
+        <text class="text" x="60" y="20">wikimap.parquet</text>
+      </g>
+      
+      <!-- README file -->
+      <g transform="translate(0, 430)">
+        <line class="line" x1="0" y1="-25" x2="0" y2="15" />
+        <line class="line" x1="0" y1="15" x2="20" y2="15" />
+        <rect class="file" x="20" y="5" width="30" height="20" rx="3" ry="3" />
+        <text class="text" x="60" y="20">README</text>
+      </g>
+    </g>
+  </g>
+</svg>
